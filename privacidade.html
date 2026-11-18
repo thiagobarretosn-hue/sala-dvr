@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade — Sala DVR rclone</title>
+<meta name="description" content="Política de privacidade do aplicativo Sala DVR rclone.">
+<style>
+  :root { --bg:#ffffff; --fg:#1d1f23; --muted:#5b6170; --line:#e3e5ea; --accent:#1a6be0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14161a; --fg:#e8eaee; --muted:#9aa1ae; --line:#2a2e36; --accent:#6aa5ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+  footer { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidade — Sala DVR rclone</h1>
+  <p class="sub">Última atualização: 18 de novembro de 2026</p>
+
+  <h2>1. Quem usa</h2>
+  <p>O Sala DVR rclone é um projeto pessoal e doméstico. O único usuário é o dono do projeto, com a própria conta Google.
+  O aplicativo não é oferecido ao público.</p>
+
+  <h2>2. Dados do Google acessados</h2>
+  <p>O aplicativo pede apenas o escopo <code>https://www.googleapis.com/auth/drive.file</code>. Com ele, só tem acesso
+  aos arquivos e pastas que ele mesmo criou no Google Drive. Não lê, não lista nem altera outros arquivos da conta,
+  e não acessa e-mail, contatos ou qualquer outro dado do Google.</p>
+
+  <h2>3. Como os dados são usados</h2>
+  <ul>
+    <li>Os vídeos das câmeras da casa são enviados para a pasta "Cameras Sala" no Drive do dono.</li>
+    <li>Os vídeos dessa pasta com mais de 7 dias são apagados automaticamente.</li>
+    <li>O token de acesso fica guardado só no computador doméstico onde o programa roda.</li>
+  </ul>
+
+  <h2>4. Compartilhamento</h2>
+  <p>Nenhum dado é vendido, compartilhado ou transferido a terceiros, nem usado para publicidade, análise ou treinamento de
+  modelos de IA. Não há servidor intermediário: o envio vai direto do computador doméstico para o Google Drive.</p>
+
+  <h2>5. Uso Limitado</h2>
+  <p>O uso e a transferência de informações recebidas das APIs do Google seguem a
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>,
+  incluindo os requisitos de Uso Limitado.</p>
+
+  <h2>6. Como revogar</h2>
+  <p>O acesso pode ser revogado a qualquer momento em
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>7. Contato</h2>
+  <p><a href="https://github.com/thiagobarretosn-hue/sala-dvr/issues">github.com/thiagobarretosn-hue/sala-dvr/issues</a></p>
+
+  <hr>
+
+  <section lang="en" id="en">
+  <h1>Privacy policy — Sala DVR rclone</h1>
+  <p class="sub">Last updated: November 18, 2026</p>
+  <p><strong>Users.</strong> Sala DVR rclone is a personal home project. Its only user is the project owner, with their own
+  Google account. It is not offered to the public.</p>
+  <p><strong>Google data accessed.</strong> Only the <code>drive.file</code> scope: access is limited to files and folders the app
+  itself created. It does not read, list or modify any other Drive file, and does not access email, contacts or any other Google data.</p>
+  <p><strong>Use.</strong> Home camera recordings are uploaded to the "Cameras Sala" folder in the owner's Drive, and recordings
+  older than 7 days are deleted from that folder. The access token is stored only on the home computer running the program.</p>
+  <p><strong>Sharing.</strong> No data is sold, shared or transferred to third parties, or used for advertising, analytics or
+  AI model training. There is no intermediate server.</p>
+  <p><strong>Limited Use.</strong> The app's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+  <p><strong>Revoking access.</strong> <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p><strong>Contact.</strong> <a href="https://github.com/thiagobarretosn-hue/sala-dvr/issues">github.com/thiagobarretosn-hue/sala-dvr/issues</a></p>
+  </section>
+
+  <hr>
+  <footer><a href="./">Sala DVR rclone</a></footer>
+</main>
+</body>
+</html>

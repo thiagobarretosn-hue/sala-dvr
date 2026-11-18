@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sala DVR rclone</title>
+<meta name="description" content="Sala DVR rclone: backup doméstico das gravações das câmeras da casa no Google Drive do próprio dono.">
+<style>
+  :root { --bg:#ffffff; --fg:#1d1f23; --muted:#5b6170; --line:#e3e5ea; --accent:#1a6be0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14161a; --fg:#e8eaee; --muted:#9aa1ae; --line:#2a2e36; --accent:#6aa5ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+  footer { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sala DVR rclone</h1>
+  <p class="sub">Backup doméstico das gravações das câmeras de casa no Google Drive do próprio dono.</p>
+
+  <h2>O que é</h2>
+  <p>O <strong>Sala DVR rclone</strong> é um projeto pessoal, sem fins comerciais, que roda num único computador doméstico.
+  As câmeras da casa gravam no computador, e o programa de código aberto <a href="https://rclone.org">rclone</a>
+  usa este aplicativo OAuth para enviar as gravações para uma pasta no Google Drive do dono da casa.</p>
+
+  <h2>Como usa o Google Drive</h2>
+  <ul>
+    <li>Pede apenas o escopo <code>drive.file</code>: acesso somente aos arquivos que o próprio aplicativo criou.
+      Ele não lê, não lista e não altera nenhum outro arquivo do Drive.</li>
+    <li>Envia os vídeos para a pasta "Cameras Sala" e apaga dessa pasta os vídeos com mais de 7 dias.</li>
+    <li>Não há outros usuários: o aplicativo é usado só pela conta do dono do projeto.</li>
+  </ul>
+
+  <p><a href="privacidade.html">Política de privacidade</a></p>
+
+  <hr>
+
+  <h2 lang="en">English</h2>
+  <p lang="en"><strong>Sala DVR rclone</strong> is a personal, non-commercial home project running on a single computer.
+  It lets the open-source tool <a href="https://rclone.org">rclone</a> upload the home security camera recordings to a folder
+  in the owner's own Google Drive. It requests only the <code>drive.file</code> scope (files created by the app itself),
+  deletes recordings older than 7 days from that folder, and is used only by the project owner's account.
+  See the <a href="privacidade.html#en">privacy policy</a>.</p>
+
+  <hr>
+  <footer>Contato: <a href="https://github.com/thiagobarretosn-hue/sala-dvr/issues">github.com/thiagobarretosn-hue/sala-dvr/issues</a></footer>
+</main>
+</body>
+</html>
